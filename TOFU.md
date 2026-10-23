@@ -47,7 +47,7 @@ git -C /private/tmp/gallery-batch2/2048 diff --quiet upstream/master -- LICENSE.
 
 All JavaScript syntax checks passed, the diff has no whitespace errors, and the upstream license, README, icons, styles, fonts, and game scripts are byte-for-byte unchanged.
 
-An additional local browser check used the gstack `/browse` skill with `aside repl`: arrow-key play produced merges and a score of 84; reloading restored the same tile values, positions, and score; New Game returned to two tiles and score 0. All 14 observed game resource requests stayed on the local origin and returned HTTP 200. Console errors were `[]`. At a 375-pixel mobile viewport, document width stayed 375 pixels and the board was 280 pixels wide. Desktop and mobile screenshots were inspected. The final check explicitly brought the test tab to the front because the background tab delayed animation-frame rendering. This is local verification; no deployment was made.
+An additional local browser check used the gstack `/browse` skill with `aside repl`: arrow-key play produced merges and a score of 84; reloading restored the same tile values, positions, and score; New Game returned to two tiles and score 0. All 14 observed game resource requests stayed on the local origin and returned HTTP 200. Console errors were `[]`. At a 375-pixel mobile viewport, document width stayed 375 pixels and the board was 280 pixels wide. Desktop and mobile screenshots were inspected, but the browser profile's extension styling and full-page capture artifacts mean they are not clean visual acceptance evidence. The final check explicitly brought the test tab to the front because the background tab delayed animation-frame rendering. This is local verification; no deployment was made.
 
 ## License
 
